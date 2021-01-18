@@ -2,9 +2,17 @@ export const themes = {
   light: {
     text1: `black`,
     text2: `rgba(0,0,0,0.7)`,
-    primary: `#3913B8`,
-    secondary: "#2FB5FC",
-    backgroundColor: `#f2f6ff`,
+
+    white: `rgb(255,255,255)`,
+    lightgrey: `rgb(244,246,248)`,
+    grey: `rgb(157,174,194)`,
+    darkgrey: `rgb(110,128,152)`,
+
+    violet: `rgb(89, 100, 244)`,
+    lightviolet: `rgb(147,155, 244)`,
+    darkblue: `rgb(25,23,45)`,
+    midnight: `rgb(18,23, 33)`,
+
     card: {
       backgroundColor: `rgba(255, 255, 255, 0.6)`,
       boxShadow: `0px 50px 100px rgba(34, 79, 169, 0.3),
@@ -31,7 +39,7 @@ export const themes = {
   dark: {
     text1: `white`,
     text2: `rgba(255,255,255,0.7)`,
-    backgroundColor: `#1F1F47`,
+    backgroundColor: `rgb(18,23, 33)`,
     card: {
       backgroundColor: `rgba(25, 24, 63, 0.98)`,
       boxShadow: `0px 30px 60px rgba(0, 0, 0, 0.25),

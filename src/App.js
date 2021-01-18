@@ -1,7 +1,12 @@
-import logo from "./logo.svg";
-
+import { GlobalStyle } from "./styles/GlobalStyle";
+import { Header } from "./components/header";
 function App() {
-  return <h1>github jobs api</h1>;
+  return (
+    <>
+      <GlobalStyle />
+      <Header />
+    </>
+  );
 }
 
 export default App;
