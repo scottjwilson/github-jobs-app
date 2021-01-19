@@ -1,10 +1,21 @@
 import styled from "styled-components";
+import { WiDaySunny, WiMoonAltWaxingCrescent2 } from "react-icons/wi";
 
+export const Sun = styled(WiDaySunny)`
+  color: white;
+  font-size: 2rem;
+`;
+export const Moon = styled(WiMoonAltWaxingCrescent2)`
+  color: white;
+
+  font-size: 2rem;
+`;
 export const ToggleContainer = styled.div`
   /* The switch - the box around the slider */
   position: absolute;
   top: 2rem;
   right: 30rem;
+  display: flex;
 
   .switch {
     position: relative;
@@ -28,7 +39,8 @@ export const ToggleContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: rgb(244, 246, 248);
+
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -40,13 +52,14 @@ export const ToggleContainer = styled.div`
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(89, 100, 224);
+
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
 
   input:checked + .slider {
-    background-color: #2196f3;
+    background-color: rgb(244, 246, 248);
   }
 
   input:focus + .slider {

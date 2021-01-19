@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // import storage from "local-storage-fallback";
 export const useDarkMode = () => {
   const [theme, setTheme] = useState("light");

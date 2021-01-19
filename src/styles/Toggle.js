@@ -1,20 +1,16 @@
 import React from "react";
 import { func, string } from "prop-types";
-import styled from "styled-components";
-import { ToggleContainer } from "./Toggle.styled";
-// Import a couple of SVG files we'll use in the design: https://www.flaticon.com
-import { WiDaySunny, WiMoonAltWaxingCrescent2 } from "react-icons/wi";
+import { Sun, Moon, ToggleContainer } from "./Toggle.styled";
 
-const Toggle = ({ theme, toggleTheme }) => {
-  const isLight = theme === "light";
+const Toggle = ({ toggleTheme }) => {
   return (
     <ToggleContainer>
-      <WiDaySunny />
+      <Sun />
       <label className="switch">
         <input type="checkbox" onClick={toggleTheme} />
         <span className="slider round"></span>
       </label>
-      <WiMoonAltWaxingCrescent2 />
+      <Moon />
     </ToggleContainer>
   );
 };

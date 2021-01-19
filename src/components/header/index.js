@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <StyledHeader>
       <HeaderWrapper>
-        <img src={logo} />
+        <img src={logo} alt="devjobs" />
       </HeaderWrapper>
       <SearchWrapper>
         <Row>
