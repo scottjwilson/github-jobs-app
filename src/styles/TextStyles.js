@@ -4,8 +4,6 @@ import { device } from "./MediaQueries";
 export const H1 = styled.h1`
   font-size: 28px;
   line-height: 36px;
-  font-weight: 700;
-  margin: 1rem 0;
 
   @media ${device.tablet} {
   }

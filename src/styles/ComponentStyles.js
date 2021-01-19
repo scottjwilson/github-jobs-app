@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { device } from "../styles/MediaQueries";
-import { themes } from "../styles/ColorStyles";
 
 export const Container = styled.div`
   max-width: 400px;
@@ -15,7 +14,7 @@ export const Button = styled.button`
   line-height: 16px;
 
   font-weight: bold;
-  background-color: ${themes.light.violet};
+  background-color: #000;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
   border-radius: 6px;
   padding: 1rem 0;

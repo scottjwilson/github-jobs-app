@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../../styles/ColorStyles";
+
 import img from "../../images/bg-pattern-header.svg";
 
 export const StyledHeader = styled.header`
@@ -22,7 +22,7 @@ export const SearchWrapper = styled.div`
   width: 1100px;
   height: 80px;
   margin: 0 auto;
-  background-color: ${themes.light.white};
+  background-color: #fff;
   border-radius: 6px;
   input {
     display: flex;
@@ -49,7 +49,7 @@ export const Searchbox = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  border-right: 1px solid ${themes.light.violet};
+  border-right: 1px solid #fff;
 `;
 export const LocationBox = styled.div``;
 export const ActionBox = styled.div``;
