@@ -8,18 +8,18 @@ import {
   Company,
   Location,
 } from "./styles";
-const Card = ({ time, schedule, title, company, location }) => {
+const Card = ({ job }) => {
   return (
     <CardWrapper>
       <Content>
         <Time>
-          {time}
+          {job.created_at}
           <Dot>{" • "}</Dot>
-          {schedule}
+          {job.type}
         </Time>
-        <JobTitle>{title}</JobTitle>
-        <Company>{company}</Company>
-        <Location>{location}</Location>
+        <JobTitle>{job.title}</JobTitle>
+        <Company>{job.company}</Company>
+        <Location>{job.location}</Location>
       </Content>
     </CardWrapper>
   );

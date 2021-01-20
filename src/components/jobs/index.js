@@ -1,19 +1,18 @@
 import React from "react";
 import { Wrapper } from "./styles";
-import { data } from "./data";
+import { useGetJobs } from "../../hooks/useGetJobs";
+
 import Card from "./Card";
+
 export const Jobs = () => {
+  const { jobs, loading, error } = useGetJobs();
   return (
     <Wrapper>
-      {data.map((job) => (
-        <Card
-          key={job.id}
-          time={job.time}
-          schedule={job.schedule}
-          title={job.title}
-          company={job.company}
-          location={job.location}
-        />
+      {loading && <h1>Loading...</h1>}
+      {error && <h1>Error, try again</h1>}
+
+      {jobs.map((job) => (
+        <Card key={job.id} job={job} />
       ))}
     </Wrapper>
   );
