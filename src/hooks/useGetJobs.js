@@ -6,7 +6,8 @@ const ACTIONS = {
   ERROR: "error",
 };
 
-const GIT_API = "/positions.json";
+const GIT_API =
+  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json";
 
 const reducer = (state, action) => {
   switch (action.type) {
