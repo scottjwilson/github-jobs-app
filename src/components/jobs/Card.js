@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import ReactTimeAgo from "react-time-ago";
 import ReactMarkdown from "react-markdown";
@@ -12,7 +11,6 @@ import {
   Company,
   CompanyLogo,
   Location,
-  FullJob,
   JobWrapper,
   modalStyles,
 } from "./styles";
